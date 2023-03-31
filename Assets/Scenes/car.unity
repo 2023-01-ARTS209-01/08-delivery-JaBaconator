@@ -213,8 +213,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147275709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.43, y: 1.6881757, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3, y: 1.5, z: 0}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -230,6 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 169350624}
   - component: {fileID: 169350625}
+  - component: {fileID: 169350626}
   m_Layer: 0
   m_Name: turret
   m_TagString: Untagged
@@ -246,7 +247,7 @@ Transform:
   m_GameObject: {fileID: 169350623}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 0.85, y: 0.425, z: 2}
+  m_LocalScale: {x: 0.75, y: 0.5, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 602505318}
@@ -305,6 +306,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &169350626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169350623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce6599bb21b6310429dfe71c289ee6d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &602505317
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,8 +343,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 602505317}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1, z: 0}
-  m_LocalScale: {x: 0.25, y: 1, z: 1}
+  m_LocalPosition: {x: -0, y: 0.95, z: 0}
+  m_LocalScale: {x: 0.15, y: 0.9, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 169350624}
@@ -609,6 +622,7 @@ GameObject:
   - component: {fileID: 2088014974}
   - component: {fileID: 2088014973}
   - component: {fileID: 2088014972}
+  - component: {fileID: 2088014978}
   m_Layer: 0
   m_Name: tank
   m_TagString: Untagged
@@ -744,3 +758,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2088014978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088014971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 147275709}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
