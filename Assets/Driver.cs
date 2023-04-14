@@ -5,6 +5,7 @@ using UnityEngine;
 public class Driver : MonoBehaviour {
     private float steerSpeed = 40f;
     private float driveSpeed = 20f;
+    private float turretDirection = 1f;
 
     // Update is called once per frame
     void Update() {
